@@ -2,11 +2,12 @@
 
 ##Architecture
 ![Architecture](Architecture/Architecture-dg.png)
-Project Overview
+
+##Project Overview
 
 This project demonstrates the deployment of a static website on AWS infrastructure created from scratch using AWS Free Tier services.
 
-The infrastructure includes:
+##The infrastructure includes:
 
 Custom Virtual Private Cloud (VPC)
 Public Subnet
@@ -22,15 +23,17 @@ The static website files are hosted on an EC2 instance running a web server, and
 ##AWS Services Used
   
 - Service	Purpose
-VPC	Network isolation
-Public Subnet	Hosts web server
-Internet Gateway	Internet access
-Route Table	Traffic routing
-Security Group	Access control
-EC2	Web server hosting
-Launch Template	EC2 configuration
-Auto Scaling Group	Instance management
-Features
+- VPC	Network isolation
+- Public Subnet	Hosts web server
+- Internet Gateway	Internet access
+- Route Table	Traffic routing
+- Security Group	Access control
+- EC2	Web server hosting
+- Launch Template	EC2 configuration
+- Auto Scaling Group	Instance management
+
+##Features
+
 Custom VPC configuration
 Public subnet with internet access
 Security Group allowing HTTP and SSH access
@@ -38,7 +41,8 @@ Static website hosted on EC2
 Auto Scaling Group deployment
 AWS Free Tier compatible setup
 Infrastructure deployment documentation included
-Deployment Steps
+
+##Deployment Steps
 1. Create VPC
 Create a custom VPC
 Configure CIDR block
