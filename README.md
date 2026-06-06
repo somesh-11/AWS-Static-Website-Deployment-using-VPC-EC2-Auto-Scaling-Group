@@ -7,7 +7,7 @@
 
 This project demonstrates the deployment of a static website on AWS infrastructure created from scratch using AWS Free Tier services.
 
-##The infrastructure includes:
+## The infrastructure includes:
 
 Custom Virtual Private Cloud (VPC)
 Public Subnet
@@ -20,7 +20,7 @@ Auto Scaling Group (ASG)
 
 The static website files are hosted on an EC2 instance running a web server, and the Auto Scaling Group ensures instance availability and scalability.
 
-##AWS Services Used
+## AWS Services Used
   
 - Service	Purpose
 - VPC	Network isolation
@@ -32,48 +32,51 @@ The static website files are hosted on an EC2 instance running a web server, and
 - Launch Template	EC2 configuration
 - Auto Scaling Group	Instance management
 
-##Features
+## Features
 
-Custom VPC configuration
-Public subnet with internet access
-Security Group allowing HTTP and SSH access
-Static website hosted on EC2
-Auto Scaling Group deployment
-AWS Free Tier compatible setup
-Infrastructure deployment documentation included
+- Custom VPC configuration
+- Public subnet with internet access
+- Security Group allowing HTTP and SSH access
+- Static website hosted on EC2
+- Auto Scaling Group deployment
+- AWS Free Tier compatible setup
+- Infrastructure deployment documentation included
 
-##Deployment Steps
+## Deployment Steps
 1. Create VPC
 Create a custom VPC
 Configure CIDR block
 Enable DNS hostnames
-2. Create Public Subnet
+
+3. Create Public Subnet
 Create subnet within VPC
 Associate route table
-3. Configure Internet Gateway
+
+4. Configure Internet Gateway
 Attach Internet Gateway to VPC
 Add default route (0.0.0.0/0)
-4. Create Security Group
 
+5. Create Security Group
 Allow:
-
 HTTP (80)
 SSH (22)
-5. Launch EC2 Instance
+
+6. Launch EC2 Instance
 Amazon Linux 2
 t2.micro (Free Tier)
 Associate public IP
-6. Install Web Server
 
+7. Install Web Server
 Example:
-
 sudo yum update -y
 sudo yum install httpd -y
 sudo systemctl start httpd
 sudo systemctl enable httpd
-7. Deploy Website Files
+
+8. Deploy Website Files
 sudo cp -r website-files/* /var/www/html/
-8. Create Launch Template
+
+9. Create Launch Template
 
 Configure:
 
@@ -81,7 +84,8 @@ AMI
 Instance Type
 Security Group
 User Data
-9. Create Auto Scaling Group
+
+10. Create Auto Scaling Group
 Attach Launch Template
 Select VPC and subnet
 Configure desired capacity
