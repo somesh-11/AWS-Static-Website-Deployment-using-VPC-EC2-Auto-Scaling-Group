@@ -77,36 +77,34 @@ sudo systemctl enable httpd
 sudo cp -r website-files/* /var/www/html/
 
 9. Create Launch Template
-
 Configure:
-
-AMI
-Instance Type
-Security Group
-User Data
+- AMI
+- Instance Type
+- Security Group
+- User Data
 
 10. Create Auto Scaling Group
 Attach Launch Template
 Select VPC and subnet
 Configure desired capacity
 
-Verification
+## Verification
 
 Website successfully served through EC2 instance:
 
-http://<EC2-Public-IP>
+http://(EC2-Public-IP)
 
 Auto Scaling Group configured to maintain instance availability.
 
-Learning Outcomes
+## Learning Outcomes
 
 Through this project I gained hands-on experience with:
 
-AWS Networking (VPC, Subnets, Route Tables)
-EC2 Instance Management
-Security Groups
-Web Server Configuration
-Auto Scaling Groups
-Static Website Hosting
-AWS Free Tier Resource Management
+- AWS Networking (VPC, Subnets, Route Tables)
+- EC2 Instance Management
+- Security Groups
+- Web Server Configuration
+- Auto Scaling Groups
+- Static Website Hosting
+- AWS Free Tier Resource Management
 
