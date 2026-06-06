@@ -1,9 +1,9 @@
 ## AWS Static Website Deployment using VPC, EC2 & Auto Scaling Group
 
-##Architecture
+## Architecture
 ![Architecture](Architecture/Architecture-dg.png)
 
-##Project Overview
+## Project Overview
 
 This project demonstrates the deployment of a static website on AWS infrastructure created from scratch using AWS Free Tier services.
 
